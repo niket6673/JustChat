@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/outer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#88676767">
+
+    <RelativeLayout
+        android:id="@+id/detailmain"
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/dialogroundcorner">
+
+        <TextView
+            android:id="@+id/detailhead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Settings"
+            android:textColor="@color/appColor"
+            android:textSize="13dp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/detail"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_below="@+id/detailhead"
+            android:layout_marginTop="5dp"
+            android:background="@color/appColor" />
+
+        <TextView
+            android:id="@+id/logout_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="Logout"
+            android:textColor="@color/appColor"
+            android:textSize="12dp" />
+
+        <View
+            android:id="@+id/detailview"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_below="@+id/logout_menu"
+            android:background="#C0C0C0" />
+
+
+        <TextView
+
+            android:id="@+id/refercode_menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detailview"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:clickable="true"
+            android:padding="8dp"
+            android:text="Your refer code"
+            android:textColor="@color/appColor"
+            android:textSize="12dp" />
+
+        <View
+            android:id="@+id/detai"
+            android:layout_width="match_parent"
+            android:layout_height=".5dp"
+            android:layout_below="@+id/refercode_menu"
+            android:background="#C0C0C0" />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ConnectYourPartner">
+
+        <LinearLayout
+            android:id="@+id/linearSearch"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/greendark"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.4"
+                android:padding="14dp"
+                android:src="@drawable/ic_close" />
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/linearSearch"
+            android:background="@color/green" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+
+                <TextView
+                    android:id="@+id/t"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Get Attached to your Partner"
+                    android:textColor="@color/greendark"
+                    android:textSize="20dp"
+                    android:textStyle="bold|italic" />
+
+
+                <TextView
+                    android:id="@+id/Tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/t"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="---- Share below couple code with your partner ----"
+                    android:textSize="15dp" />
+
+                <TextView
+                    android:id="@+id/coupleCodeTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/Tv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="-LUdxJGUCk2UdWV1WuU-"
+                    android:textColor="@color/greendark"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/sh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coupleCodeTv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/share"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_share_black_24dp" />
+
+                    <ImageView
+                        android:id="@+id/copy"
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:layout_toRightOf="@+id/share"
+                        android:padding="10dp"
+                        android:src="@drawable/ic_content_copy" />
+
+                </RelativeLayout>
+
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@id/sh"
+                    android:layout_centerVertical="true"
+                    android:background="@color/green" />
+
+
+                <TextView
+                    android:id="@+id/Tvv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/divider"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="30dp"
+                    android:fontFamily="sans-serif"
+                    android:text="Did your partner already get couple code?\n                    Please enter it below."
+                    android:textColor="@color/black"
+                    android:textSize="15dp" />
+
+
+                <EditText
+                    android:id="@+id/codeEd"
+                    android:layout_width="240dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/Tvv"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:hint="Code form your love"
+                    android:paddingBottom="25dp"
+                    android:singleLine="true"
+                    android:text="" />
+
+                <com.example.niket.chatapplication.fancy.FancyButton
+                    android:id="@+id/submit"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/codeEd"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    fancy:fb_defaultColor="@color/greendark"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="2dp"
+                    fancy:fb_text="SUBMIT"
+                    fancy:fb_textColor="#FFFFFF" />
+
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="Gradle: com.vipulasri:ticketview-1.0.7">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ticketview-1.0.7.aar/09b712d29de2179e112af92ccd91c972/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ticketview-1.0.7.aar/09b712d29de2179e112af92ccd91c972/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-1/files-1.1/ticketview-1.0.7.aar/09b712d29de2179e112af92ccd91c972/res" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.vipulasri/ticketview/1.0.7/ca8a70b900c1d4879d8006163ad5b1c86ea4b41c/ticketview-1.0.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

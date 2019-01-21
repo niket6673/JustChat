@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:fancy="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/rel"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/greendark">
+
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="65dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:padding="9dp"
+                android:src="@drawable/ic_close" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="LOGIN"
+
+                android:textColor="@color/white"
+
+                android:textSize="15dp" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/v"
+            android:layout_width="fill_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/rel"
+            android:background="@color/lightGreyColor" />
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/v"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="20dp">
+
+
+            <LinearLayout
+
+                android:id="@+id/linearlayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableStart="@drawable/ic_person_outline_black"
+                        android:drawablePadding="5dp"
+                        android:hint="Username"
+                        android:inputType="text"
+
+                        />
+
+                </android.support.design.widget.TextInputLayout>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    fancy:passwordToggleEnabled="true">
+
+                    <EditText
+                        android:id="@+id/editTextPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:drawableStart="@drawable/ic_lock"
+                        android:drawablePadding="5dp"
+                        android:hint="Password"
+                        android:inputType="textPassword"
+                       />
+                </android.support.design.widget.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:padding="5dp"
+                    android:weightSum="10">
+
+                    <TextView
+                        android:layout_width="1dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="6"
+                        android:gravity="left"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="don't have account yet?"
+                        android:textSize="12dp" />
+
+                    <TextView
+
+                        android:id="@+id/Register"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="3"
+                        android:clickable="true"
+                        android:text=" REGISTER"
+                        android:textColor="#C755AE6B"
+                        android:textSize="12dp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <com.example.niket.chatapplication.fancy.FancyButton
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    fancy:fb_defaultColor="#C755AE6B"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="2dp"
+                    fancy:fb_text="LOGIN"
+                    fancy:fb_textColor="#FFFFFF" />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/linearlayout1"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="20dp"
+                android:visibility="gone">
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#C755AE6B"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="80dp"
+                        android:layout_marginTop="60dp"
+                        android:text="Register with Social Platforms"
+                        android:textColor="@color/white" />
+
+
+                    <com.example.niket.chatapplication.fancy.FancyButton
+                        android:id="@+id/facebook"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_margin="15dp"
+                        fancy:fb_defaultColor="@color/white"
+                        fancy:fb_focusColor="@color/greendark"
+                        fancy:fb_fontIconResource="@string/icon_facebook"
+                        fancy:fb_radius="50dp"
+                        fancy:fb_textColor="@color/green" />
+
+                    <com.example.niket.chatapplication.fancy.FancyButton
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="15dp"
+                        android:layout_toRightOf="@+id/facebook"
+                        fancy:fb_defaultColor="@color/white"
+                        fancy:fb_focusColor="@color/greendark"
+                        fancy:fb_fontIconResource="@string/icon_twitter"
+                        fancy:fb_radius="50dp"
+                        fancy:fb_textColor="@color/green" />
+
+
+                    <com.example.niket.chatapplication.fancy.FancyButton
+                        android:id="@+id/googleSignup"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="15dp"
+                        android:layout_toLeftOf="@+id/facebook"
+                        fancy:fb_defaultColor="@color/white"
+                        fancy:fb_focusColor="@color/greendark"
+                        fancy:fb_fontIconResource="@string/icon_google"
+                        fancy:fb_radius="50dp"
+                        fancy:fb_textColor="@color/green" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <com.example.niket.chatapplication.fancy.FancyButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="270dp"
+
+                    fancy:fb_defaultColor="@color/white"
+                    fancy:fb_focusColor="@color/colorPrimaryDark"
+                    fancy:fb_radius="20dp"
+                    fancy:fb_text="OR"
+                    fancy:fb_textColor="@color/colorPrimary"
+                    fancy:fb_textSize="10dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>
